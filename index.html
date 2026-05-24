@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Perta-Samtan Gas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <header class="navbar" id="navbar">
+            <div class="container navbar-container">
+                <div class="logo">
+                    <img src="assets/images/logo/logo-psg.png" alt="Logo PSG">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-i18n="nav_home">Beranda</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Tentang</a></li>
+                    <li><a href="#process" data-i18n="nav_process">Proses</a></li>
+                    <li><a href="#facility" data-i18n="nav_facility">Fasilitas</a></li>
+                    <li><a href="#advantages" data-i18n="nav_advantages">Keunggulan</a></li>
+                </ul>
+
+                <div class="navbar-wrapper-mobile">
+                    <div class="navbar-language">
+                        <span id="lang-id" style="cursor: pointer;">ID</span>
+                        <div class="lang-divider"></div>
+                        <span id="lang-en" style="cursor: pointer;">EN</span>
+                    </div>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero-content">
+            <div class="container">
+                <span class="hero-subtitle" data-i18n="hero_subtitle">HARMONY WORLD CLASS</span>
+                <h1 class="hero-title" data-i18n="hero_title">PT Perta-Samtan Gas</h1>
+                <p class="hero-quote" data-i18n="hero_quote">"Selesaikan tanggung jawab hari ini, siapkan landasan untuk esok hari."</p>
+                <div class="scroll-indicator">
+                    <span data-i18n="hero_scroll">Geser Ke Atas Untuk Menelusuri</span>
+                    <div class="scroll-line"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about reveal" id="about">
+        <div class="about-overlay"></div>
+        <img src="assets/images/hero/about-image.jpeg" alt="About PSG" class="about-bg">
+        <div class="about-content">
+            <div class="about-tabs">
+                <button class="about-tab active" data-tab="profil" data-i18n="tab_profil">Profil</button>
+                <button class="about-tab" data-tab="tujuan" data-i18n="tab_tujuan">Tujuan</button>
+                <button class="about-tab" data-tab="nilai" data-i18n="tab_nilai">Nilai</button>
+            </div>
+
+            <div class="about-panel active" id="profil">
+                <h2 data-i18n="about_title">PT Perta-Samtan Gas</h2>
+                <p data-i18n="about_p1">PT Perta-Samtan Gas didirikan pada 7 Mei 2008 dengan tujuan memproduksi LPG guna mendukung program konversi minyak tanah ke LPG serta penyediaan energi nasional.</p>
+                <p data-i18n="about_p2">Perseroan bergerak dalam bisnis pengolahan gas serta menyediakan layanan jasa dan infrastruktur terkait pemrosesan gas dengan dua kilang terintegrasi di Prabumulih dan Sungai Gerong.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span data-i18n="stat_tgl_label">Tanggal Pendirian</span>
+                        <h3 data-i18n="stat_tgl_val">7 Mei 2008</h3>
+                    </div>
+                    <div class="stat-card">
+                        <span data-i18n="stat_kap_label">Kapasitas Desain</span>
+                        <h3 data-i18n="stat_kap_val">250 MMSCFD</h3>
+                    </div>
+                    <div class="stat-card">
+                        <span data-i18n="stat_fas_label">Fasilitas Produksi</span>
+                        <h3 data-i18n="stat_fas_val">2 Kilang</h3>
+                    </div>
+                    <div class="stat-card">
+                        <span data-i18n="stat_lok_label">Lokasi Utama</span>
+                        <h3 data-i18n="stat_lok_val">Sungai Gerong</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-panel" id="tujuan">
+                <h2 data-i18n="tujuan_title">Tujuan & Maksud Perseroan</h2>
+                <div class="about-purpose-list">
+                    <div class="purpose-item">
+                        <i class="bi bi-check-lg"></i>
+                        <p data-i18n="tuj_1">Ekstraksi dan pemrosesan gas alam menjadi LPG dan produk gas lainnya.</p>
+                    </div>
+                    <div class="purpose-item">
+                        <i class="bi bi-check-lg"></i>
+                        <p data-i18n="tuj_2">Niaga dan distribusi LPG untuk memenuhi program Public Service Obligation (PSO).</p>
+                    </div>
+                    <div class="purpose-item">
+                        <i class="bi bi-check-lg"></i>
+                        <p data-i18n="tuj_3">Optimalisasi sumber daya dan fasilitas pemrosesan gas untuk layanan terbaik.</p>
+                    </div>
+                    <div class="purpose-item">
+                        <i class="bi bi-check-lg"></i>
+                        <p data-i18n="tuj_4">Penyediaan infrastruktur terkait sektor pemrosesan gas secara berkelanjutan.</p>
+                    </div>
+                </div>
+                <div class="vision-mission">
+                    <div class="vision-card">
+                        <span data-i18n="visi_label">VISI</span>
+                        <h3 data-i18n="visi_text">Menjadi Perseroan Terkemuka di Dunia dalam Industri LPG & Gas</h3>
+                    </div>
+                    <div class="mission-card">
+                        <span data-i18n="misi_label">MISI</span>
+                        <h3 data-i18n="misi_text">Memberikan nilai tambah bagi Pemegang Saham, Karyawan, dan Masyarakat Indonesia melalui efisiensi kerja dan daya saing tinggi.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-panel" id="nilai">
+                <h2 data-i18n="nilai_title">Nilai-Nilai Perseroan</h2>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-top"><i class="bi bi-bullseye"></i><span>01</span></div>
+                        <h3 data-i18n="val1_title">Profesional</h3>
+                        <p data-i18n="val1_desc">Berkomitmen dalam perbaikan diri berkelanjutan dan memiliki profesionalisme tinggi.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-top"><i class="bi bi-shield-check"></i><span>02</span></div>
+                        <h3 data-i18n="val2_title">HSSE</h3>
+                        <p data-i18n="val2_desc">Fokus pada keselamatan kerja, kesehatan, keamanan, dan lingkungan.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-top"><i class="bi bi-bank"></i><span>03</span></div>
+                        <h3 data-i18n="val3_title">Tata Kelola</h3>
+                        <p data-i18n="val3_desc">Menjalankan prinsip GCG secara transparan dan bertanggung jawab.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-top"><i class="bi bi-graph-up-arrow"></i><span>04</span></div>
+                        <h3 data-i18n="val4_title">Achieve Profit</h3>
+                        <p data-i18n="val4_desc">Menghasilkan nilai ekonomi tinggi demi keberlangsungan Perseroan dan Pemangku Kepentingan.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-top"><i class="bi bi-people-fill"></i><span>05</span></div>
+                        <h3 data-i18n="val5_title">Kepuasan Pelanggan</h3>
+                        <p data-i18n="val5_desc">Berkomitmen penuh terhadap kepuasan pelanggan melalui layanan dan produk terbaik.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-top"><i class="bi bi-stars"></i><span>06</span></div>
+                        <h3 data-i18n="val6_title">Budaya AKHLAK</h3>
+                        <p data-i18n="val6_desc">Menerapkan nilai Amanah, Kompeten, Harmonis, Loyal, Adaptif, dan Kolaboratif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process reveal" id="process">
+        <div class="container">
+            <div class="process-header">
+                <span class="section-subtitle" data-i18n="proc_sub">Proses Bisnis</span>
+                <h2 class="section-title" data-i18n="proc_title">Alur Operasional PT Perta-Samtan Gas</h2>
+            </div>
+        </div>
+
+        <div class="process-row process-animate">
+            <div class="process-image"><img src="assets/images/process/proses-image-1.jpg" alt="Feed Gas Masuk"></div>
+            <div class="process-content">
+                <span class="process-number">01</span>
+                <h3 data-i18n="proc1_title">Feed Gas Masuk</h3>
+                <p data-i18n="proc1_desc">Gas alam dari PT Pertamina Hulu Rokan Regional 1 Zona 4 dengan kapasitas rata-rata ≈ 200 MMSCFD dialirkan melalui pipa Pertamina EP 28° dan Pertagas 20°.</p>
+            </div>
+        </div>
+        <div class="process-row reverse process-animate">
+            <div class="process-image"><img src="assets/images/process/proses-image-2.jpeg" alt="Kilang Ekstraksi Prabumulih"></div>
+            <div class="process-content">
+                <span class="process-number">02</span>
+                <h3 data-i18n="proc2_title">Kilang Ekstraksi Prabumulih</h3>
+                <p data-i18n="proc2_desc">Gas alam diproses untuk memisahkan komponen NGL (Natural Gas Liquids). Lean gas dan kondensat dikembalikan ke Pertamina Hulu Rokan.</p>
+            </div>
+        </div>
+        <div class="process-row process-animate">
+            <div class="process-image"><img src="assets/images/process/proses-image-3.jpg" alt="Fraksinasi LPG"></div>
+            <div class="process-content">
+                <span class="process-number">03</span>
+                <h3 data-i18n="proc3_title">Pipa NGL ≈ 90KM</h3>
+                <p data-i18n="proc3_desc">NGL dialirkan melalui pipa berdiameter 8 inci sepanjang \pm90 km dari Kilang Prabumulih menuju Kilang Fraksinasi Sungai Gerong.</p>
+            </div>
+        </div>
+        <div class="process-row reverse process-animate">
+            <div class="process-image"><img src="assets/images/process/proses-image-4.jpg" alt="Penyimpanan Produk"></div>
+            <div class="process-content">
+                <span class="process-number">04</span>
+                <h3 data-i18n="proc4_title">Kilang Fraksinasi Sungai Gerong</h3>
+                <p data-i18n="proc4_desc">NGL difraksinasi menghasilkan LPG Mixed (Propane + Butane) 770 MT/hari dan Kondensat (Pentane+) 2.200 bbl/hari.</p>
+            </div>
+        </div>
+        <div class="process-row process-animate">
+            <div class="process-image"><img src="assets/images/process/proses-image-5.jpg" alt="Distribusi Energi"></div>
+            <div class="process-content">
+                <span class="process-number">05</span>
+                <h3 data-i18n="proc5_title">Distribusi Produk</h3>
+                <p data-i18n="proc5_desc">LPG disalurkan ke Depot Pulau Layang & Jetty 01 Plaju menuju Pontianak, Bangka, dan Belitung melalui armada vessel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="output reveal" id="output">
+        <div class="output-overlay"></div>
+        <div class="output-header">
+            <span class="section-subtitle light" data-i18n="out_sub">Kapabilitas Produksi</span>
+            <h2 class="output-title" data-i18n="out_title">Output Produksi</h2>
+        </div>
+        <div class="output-wrapper">
+            <div class="output-item active">
+                <div class="output-content">
+                    <h3 data-i18n="out1_title">Kapasitas Desain</h3>
+                    <h4>250 MMSCFD</h4>
+                    <p data-i18n="out1_desc">Total Kedua Kilang</p>
+                </div>
+            </div>
+            <div class="output-item">
+                <div class="output-content">
+                    <h3 data-i18n="out2_title">Produksi LPG</h3>
+                    <h4>770 MT/Hari</h4>
+                    <p data-i18n="out2_desc">Propane + Butane</p>
+                </div>
+            </div>
+            <div class="output-item">
+                <div class="output-content">
+                    <h3 data-i18n="out3_title">Produksi Kondensat</h3>
+                    <h4>2.200 BBL/Hari</h4>
+                    <p data-i18n="out3_desc">Pentane+</p>
+                </div>
+            </div>
+            <div class="output-item">
+                <div class="output-content">
+                    <h3 data-i18n="out4_title">Feed Gas Rata-Rata</h3>
+                    <h4>≈ 200 MMSCFD</h4>
+                    <p data-i18n="out4_desc">Dari PHR Zona 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities reveal" id="facility">
+        <div class="container">
+            <div class="facilities-header">
+                <span class="section-subtitle" data-i18n="fac_sub">Area Operasi</span>
+                <h2 class="section-title" data-i18n="fac_title">Fasilitas Utama</h2>
+                <p class="section-description" data-i18n="fac_desc">PT Perta-Samtan Gas mengoperasikan dua kilang terintegrasi beserta jaringan distribusi dan infrastruktur pendukung pengolahan gas bumi.</p>
+            </div>
+        </div>
+        <div class="facilities-slider">
+            <div class="facilities-track">
+                <div class="facility-card">
+                    <div class="facility-image"><img src="assets/images/fasilitas/fasilitas-1.jpeg" alt=""></div>
+                    <div class="facility-content">
+                        <span class="facility-number">01</span>
+                        <h3 data-i18n="fac1_title">Kilang Ekstraksi Prabumulih</h3>
+                        <p data-i18n="fac1_desc">Fasilitas ekstraksi NGL dari gas alam dengan feed gas rata-rata ±220 MMSCFD dari PHR Regional 1 Zona 4.</p>
+                        <div class="facility-info">
+                            <span>±200 MMSCFD</span><span>NGL + Lean Gas</span><span>PHR Zone 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-image"><img src="assets/images/fasilitas/fasilitas-2.jpeg" alt=""></div>
+                    <div class="facility-content">
+                        <span class="facility-number">02</span>
+                        <h3 data-i18n="fac2_title">Kilang Fraksinasi Sungai Gerong</h3>
+                        <p data-i18n="fac2_desc">Memproses NGL menjadi LPG Mixed dan Kondensat untuk kebutuhan distribusi domestik nasional.</p>
+                        <div class="facility-info">
+                            <span>250 MMSCFD</span><span data-i18n="fac2_val2">710 MT/Hari</span><span data-i18n="fac2_val3">2.220 BBL/Hari</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-image"><img src="assets/images/fasilitas/fasilitas-3.jpg" alt=""></div>
+                    <div class="facility-content">
+                        <span class="facility-number">03</span>
+                        <h3 data-i18n="fac3_title">Pipa NGL</h3>
+                        <p data-i18n="fac3_desc">Jaringan pipa NGL sepanjang 90 km yang menghubungkan fasilitas Prabumulih dan Sungai Gerong.</p>
+                        <div class="facility-info">
+                            <span data-i18n="fac3_val1">Panjang 90 KM</span><span data-i18n="fac3_val2">8 Inch Diameter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-image"><img src="assets/images/fasilitas/fasilitas-4.jpg" alt=""></div>
+                    <div class="facility-content">
+                        <span class="facility-number">04</span>
+                        <h3 data-i18n="fac4_title">Depot & Jetty Distribusi</h3>
+                        <p data-i18n="fac4_desc">Pulau layang & Jetty 01 RU III</p>
+                        <div class="facility-info">
+                            <span data-i18n="fac4_val1">Pulau Layang Depot</span><span data-i18n="fac4_val2">RU III Jetty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages reveal" id="advantages">
+        <div class="advantages-bg">
+            <img src="assets/images/keunggulan/keunggulan-1.png" alt="Keunggulan Perseroan" id="advantagesImage">
+            <div class="advantages-overlay"></div>
+        </div>
+        <div class="advantages-content" id="pencapaian">
+            <div class="advantages-header">
+                <span class="section-subtitle light" data-i18n="adv_sub">Keunggulan & Pencapaian</span>
+                <h2 class="advantages-title" data-i18n="adv_title">Keunggulan Perseroan</h2>
+                <p class="advantages-description" id="advantagesDescription" data-i18n="adv_desc">Konsisten mencapai produktivitas, stabilitas, dan efisiensi tinggi dengan rekam jejak keberhasilan sejak fase komersial 1 Mei 2013.</p>
+            </div>
+            <div class="advantages-menu">
+                <div class="advantage-item active" data-image="assets/images/keunggulan/keunggulan-1.png" data-description="Konsisten mencapai produktivitas, stabilitas, dan efisiensi tinggi dengan rekam jejak keberhasilan sejak fase komersial 1 Mei 2013." data-i18n-desc="adv1_desc">
+                    <span>01</span>
+                    <h3 data-i18n="adv1_title">Keunggulan Operasional</h3>
+                </div>
+                <div class="advantage-item" data-image="assets/images/keunggulan/keunggulan-2.png" data-description="Posisi keuangan kuat tanpa beban utang finansial, dengan manajemen arus kas efektif untuk peluang investasi masa depan." data-i18n-desc="adv2_desc">
+                    <span>02</span>
+                    <h3 data-i18n="adv2_title">Kondisi Keuangan Stabil</h3>
+                </div>
+                <div class="advantage-item" data-image="assets/images/keunggulan/keunggulan-3.jpeg" data-description="Kemitraan strategis dengan Pemerintah Indonesia dalam produksi LPG domestik (PSO), memperkuat posisi dan kapabilitas Perseroan." data-i18n-desc="adv3_desc">
+                    <span>03</span>
+                    <h3 data-i18n="adv3_title">Kemitraan Strategis</h3>
+                </div>
+                <div class="advantage-item" data-image="assets/images/keunggulan/keunggulan-4.jpeg" data-description="Rekam jejak perusahaan memungkinkan eksplorasi peluang bisnis di seluruh wilayah Indonesia dengan potensi pertumbuhan luas." data-i18n-desc="adv4_desc">
+                    <span>04</span>
+                    <h3 data-i18n="adv4_title">Peluang Bisnis Beragam</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey reveal" id="journey">
+        <div class="journey-bg">
+            <img src="assets/images/journey/journey-1.png" alt="Perjalanan Perseroan" id="journeyImage">
+            <div class="journey-overlay"></div>
+        </div>
+        <div class="journey-content">
+            <div class="journey-header">
+                <span class="section-subtitle light" data-i18n="jour_sub">Perjalanan Kami</span>
+                <h2 class="journey-title" data-i18n="jour_title">Pencapaian Perseroan <br>PT Perta-Samtan Gas</h2>
+            </div>
+            <div class="journey-timeline">
+                <div class="journey-item active" data-image="assets/images/journey/journey-1.png" data-title="Pendirian Perseroan" data-description="PT Perta-Samtan Gas resmi didirikan pada 7 Mei 2008. Dimiliki 66% Pertamina Gas & 34% ST International untuk memproduksi LPG mendukung program konversi BBM pemerintah." data-i18n-title="jour1_title" data-i18n-desc="jour1_desc">
+                    <span class="journey-year">2008</span>
+                </div>
+                <div class="journey-item" data-image="assets/images/journey/journey-2.jpeg" data-title="Fase Komersial" data-description="Kilang PT Perta-Samtan Gas memasuki fase komersial mulai 1 Mei 2013. Dimulainya produksi penuh LPG dan Kondensat dari kedua kilang terintegrasi." data-i18n-title="jour2_title" data-i18n-desc="jour2_desc">
+                    <span class="journey-year">2013</span>
+                </div>
+                <div class="journey-item" data-image="assets/images/journey/journey-3.png" data-title="1 Juta Ton LPG" data-description="Berhasil memproduksi 1 juta ton LPG sejak masa komersial hingga Oktober 2018 — tonggak bersejarah dalam perjalanan perusahaan." data-i18n-title="jour3_title" data-i18n-desc="jour3_desc">
+                    <span class="journey-year">2018</span>
+                </div>
+                <div class="journey-item" data-image="assets/images/journey/journey-4.jpeg" data-title="Proper Hijau" data-description="Meraih penghargaan Proper Hijau dari Kementerian LHK RI atas komitmen pengelolaan lingkungan hidup yang unggul di seluruh area operasional." data-i18n-title="jour4_title" data-i18n-desc="jour4_desc">
+                    <span class="journey-year award"><i class="bi bi-star-fill"></i></span>
+                </div>
+                <div class="journey-item" data-image="assets/images/journey/journey-5.png" data-title="Patra Nirbhaya Karya Madya" data-description="Meraih Penghargaan Keselamatan Kerja kategori Jam Kerja Aman — bukti nyata implementasi budaya HSSE yang konsisten." data-i18n-title="jour5_title" data-i18n-desc="jour5_desc">
+                    <span class="journey-year award"><i class="bi bi-star-fill"></i></span>
+                </div>
+                <div class="journey-item" data-image="assets/images/journey/journey-6.png" data-title="Diversifikasi & Pertumbuhan" data-description="Eksplorasi peluang bisnis di seluruh Indonesia, penguatan kemitraan strategis dengan Pemerintah, dan pengembangan potensi bisnis yang lebih luas." data-i18n-title="jour6_title" data-i18n-desc="jour6_desc">
+                    <span class="journey-year">2026</span>
+                </div>
+            </div>
+            <div class="journey-detail">
+                <h3 id="journeyTitle" data-i18n="jour_det_title">Pendirian Perseroan</h3>
+                <p id="journeyDescription" data-i18n="jour_det_desc">PT Perta-Samtan Gas resmi didirikan pada 7 Mei 2008 sebagai bagian dari program konversi energi nasional menuju LPG.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="csr reveal" id="csr">
+        <div class="container">
+            <div class="csr-header">
+                <span class="section-subtitle" data-i18n="csr_sub">Corporate Social Responsibility</span>
+                <h2 class="csr-title" data-i18n="csr_title">Program Sosial Perusahaan</h2>
+            </div>
+            <div class="csr-showcase">
+                <div class="csr-showcase-track">
+                    <div class="csr-showcase-item">
+                        <img src="assets/images/csr/csr-1.png" alt="">
+                        <h3 data-i18n="csr1_title">Santunan Anak Yatim & Kaum Dhuafa</h3>
+                    </div>
+                    <div class="csr-showcase-item">
+                        <img src="assets/images/csr/csr-2.png" alt="">
+                        <h3 data-i18n="csr2_title">Hunian Sementara</h3>
+                    </div>
+                    <div class="csr-showcase-item">
+                        <img src="assets/images/csr/csr-3.png" alt="">
+                        <h3 data-i18n="csr3_title">Bantuan RLTH</h3>
+                    </div>
+                    <div class="csr-showcase-item">
+                        <img src="assets/images/csr/csr-4.png" alt="">
+                        <h3 data-i18n="csr4_title">Pencegahan Banjir Anak Sungai Musi</h3>
+                    </div>
+                    <div class="csr-showcase-item">
+                        <img src="assets/images/csr/csr-5.png" alt="">
+                        <h3 data-i18n="csr5_title">Program Safari Ramadan</h3>
+                    </div>
+                    <div class="csr-showcase-item">
+                        <img src="assets/images/csr/csr-6.png" alt="">
+                        <h3 data-i18n="csr6_title">Perkebunan Sido Mukti</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="csr-detail">
+                <div class="csr-detail-image">
+                    <img src="assets/images/csr/category-1.png" alt="" id="csrCategoryImage">
+                </div>
+                <div class="csr-detail-content">
+                    <div class="csr-label-wrapper">
+                        <span data-i18n="csr_cat_label">CSR CATEGORY</span>
+                        <div class="csr-circle-progress">
+                            <svg width="34" height="34">
+                                <circle class="circle-bg" cx="17" cy="17" r="13"></circle>
+                                <circle class="circle-progress" cx="17" cy="17" r="13"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 id="csrCategoryTitle" data-i18n="csr_det_title">Donasi Kemanusiaan</h3>
+                    <p id="csrCategoryDescription" data-i18n="csr_det_desc">Program bantuan sosial kepada masyarakat melalui bantuan pangan, bantuan bencana, dan dukungan sosial lainnya.</p>
+                    
+                    <div class="csr-category-buttons">
+                        <button class="csr-category-btn active" data-image="assets/images/csr/category-1.png" data-title="Donasi Kemanusiaan" data-description="Program bantuan sosial kepada masyarakat melalui bantuan pangan, bantuan bencana, dan dukungan sosial lainnya." data-i18n-title="csr_btn1_title" data-i18n-desc="csr_btn1_desc">
+                            <span class="progress"></span> <span data-i18n="btn_donasi">Donasi</span>
+                        </button>
+                        <button class="csr-category-btn" data-image="assets/images/csr/category-2.png" data-title="Infrastruktur Sosial" data-description="Dukungan pembangunan fasilitas umum dan infrastruktur sosial untuk masyarakat sekitar." data-i18n-title="csr_btn2_title" data-i18n-desc="csr_btn2_desc">
+                            <span class="progress"></span> <span data-i18n="btn_infra">Infrastruktur</span>
+                        </button>
+                        <button class="csr-category-btn" data-image="assets/images/csr/category-3.png" data-title="Program Kesehatan" data-description="Program kesehatan masyarakat melalui pemeriksaan kesehatan, bantuan medis, dan edukasi." data-i18n-title="csr_btn3_title" data-i18n-desc="csr_btn3_desc">
+                            <span class="progress"></span> <span data-i18n="btn_kes">Kesehatan</span>
+                        </button>
+                        <button class="csr-category-btn" data-image="assets/images/csr/category-4.png" data-title="Pelestarian Lingkungan" data-description="Program sustainability dan penghijauan lingkungan untuk mendukung operasional hijau." data-i18n-title="csr_btn4_title" data-i18n-desc="csr_btn4_desc">
+                            <span class="progress"></span> <span data-i18n="btn_ling">Lingkungan</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="safety reveal" id="safety">
+        <div class="container">
+            <div class="safety-board">
+                <div class="safety-header">
+                    <div>
+                        <span class="section-subtitle light" data-i18n="safe_sub">Peringatan Keselamatan</span>
+                        <h2 data-i18n="safe_title">HSSE Golden Rules</h2>
+                    </div>
+                    <div class="safety-badge" data-i18n="badge1">Patuh</div>
+                    <div class="safety-badge" data-i18n="badge2">Peduli</div>
+                    <div class="safety-badge" data-i18n="badge3">Intervensi</div>
+                </div>
+                <div class="safety-grid">
+                    <div class="safety-item"><span>01</span><p data-i18n="safe1">Peralatan & Perlengkapan</p></div>
+                    <div class="safety-item"><span>02</span><p data-i18n="safe2">Posisi Zona Aman</p></div>
+                    <div class="safety-item"><span>03</span><p data-i18n="safe3">Izin Kerja (SIKA)</p></div>
+                    <div class="safety-item"><span>04</span><p data-i18n="safe4">Isolasi</p></div>
+                    <div class="safety-item"><span>05</span><p data-i18n="safe5">Ruang Terbatas</p></div>
+                    <div class="safety-item"><span>06</span><p data-i18n="safe6">Operasional Lifting</p></div>
+                    <div class="safety-item"><span>07</span><p data-i18n="safe7">Bekerja di Ketinggian</p></div>
+                    <div class="safety-item"><span>08</span><p data-i18n="safe8">Pelampung Pribadi</p></div>
+                    <div class="safety-item"><span>09</span><p data-i18n="safe9">Sistem Override</p></div>
+                    <div class="safety-item"><span>10</span><p data-i18n="safe10">Integritas Asset</p></div>
+                    <div class="safety-item"><span>11</span><p data-i18n="safe11">Ekskavasi</p></div>
+                    <div class="safety-item"><span>12</span><p data-i18n="safe12">Keselamatan Berkendara</p></div>
+                    <div class="safety-item"><span>13</span><p data-i18n="safe13">Fit to Work</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ecosystem reveal" id="ecosystem">
+        <div class="container">
+            <div class="ecosystem-header">
+                <span class="section-subtitle" data-i18n="eco_sub">Ekosistem & Mitra</span>
+                <h2 class="ecosystem-title" data-i18n="eco_title">Bagian dari Ekosistem Pertamina</h2>
+                <p class="ecosystem-description" data-i18n="eco_desc">PT Perta-Samtan Gas beroperasi sebagai bagian integral rantai nilai energi nasional bersama berbagai entitas strategis.</p>
+            </div>
+            <div class="ecosystem-slider">
+                <div class="ecosystem-track">
+                    <div class="ecosystem-item"><img src="assets/images/logo/logo-pgn.jpg" alt=""><h3 data-i18n="eco1">Pertamina Gas</h3></div>
+                    <div class="ecosystem-item"><img src="assets/images/logo/Logo Pertamina Hulu Rokan.png" alt=""><h3 data-i18n="eco2">Pertamina Hulu Rokan</h3></div>
+                    <div class="ecosystem-item"><img src="assets/images/logo/Logo Pertamina Patra Niaga.png" alt=""><h3 data-i18n="eco3">Pertamina Patra Niaga</h3></div>
+                    <div class="ecosystem-item"><img src="assets/images/logo/Logo Pertagas.jpeg" alt=""><h3 data-i18n="eco4">Pertagas</h3></div>
+                    <div class="ecosystem-item"><img src="assets/images/logo/Logo ST International.png" alt=""><h3 data-i18n="eco5">ST International</h3></div>
+                    <div class="ecosystem-item"><img src="assets/images/logo/Logo Pertamina RU III.png" alt=""><h3 data-i18n="eco6">Pertamina RU III</h3></div>
+                    <div class="ecosystem-item"><h2>DPL</h2><h3 data-i18n="eco7">Depot Pulau Layang</h3></div>
+                    <div class="ecosystem-item"><img src="assets/images/logo/Logo Kementrian ESDM.png" alt=""><h3 data-i18n="eco8">Kementerian ESDM</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shareholder reveal" id="shareholder">
+        <div class="container">
+            <div class="shareholder-box">
+                <div class="shareholder-header">
+                    <span class="section-subtitle" data-i18n="share_sub">Struktur Kepemilikan</span>
+                    <h2 data-i18n="share_title">Komposisi Pemegang Saham</h2>
+                </div>
+                <div class="shareholder-bar">
+                    <div class="shareholder-fill pertamina"><span>66%</span></div>
+                    <div class="shareholder-fill sti"><span>34%</span></div>
+                </div>
+                <div class="shareholder-detail">
+                    <div class="shareholder-item">
+                        <div class="color red"></div>
+                        <div><h3>66%</h3><p data-i18n="share_desc1">PT Pertamina Gas</p></div>
+                    </div>
+                    <div class="shareholder-item">
+                        <div class="color green"></div>
+                        <div><h3>34%</h3><p data-i18n="share_desc2">ST International</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer reveal" id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/logo-psg.png" alt="" class="footer-logo">
+                    <p data-i18n="foot_desc">PT Perta-Samtan Gas merupakan perusahaan pengolahan gas bumi terintegrasi yang mendukung ketahanan energi nasional Indonesia.</p>
+                    <div class="footer-social">
+                        <a href="#home"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/pertasamtangas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#home"><i class="bi bi-globe"></i></a>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <h3 data-i18n="foot_nav">Navigasi</h3>
+                    <a href="#about" data-i18n="foot_nav_about">Tentang</a>
+                    <a href="#process" data-i18n="foot_nav_process">Proses</a>
+                    <a href="#facility" data-i18n="foot_nav_facility">Fasilitas</a>
+                    <a href="#advantages" data-i18n="foot_nav_adv">Keunggulan</a>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-i18n="foot_op">Operasional</h3>
+                    <a href="#output" data-i18n="foot_op_out">Output Produksi</a>
+                    <a href="#pencapaian" data-i18n="foot_op_ach">Pencapaian</a>
+                    <a href="#csr" data-i18n="foot_op_csr">CSR</a>
+                    <a href="#safety" data-i18n="foot_op_hsse">HSSE</a>
+                    <a href="#ecosystem" data-i18n="foot_op_eco">Ekosistem</a>
+                </div>
+            </div>
+
+            <div class="footer-location">
+                <div class="footer-location-info">
+                    <div class="footer-location-item">
+                        <h3 data-i18n="foot_loc1">Kantor Pusat / Pabrik Fraksinasi</h3>
+                        <p data-i18n="foot_loc1_desc">Komplek Pertamina Sungai Gerong Jalan Nomor 8, Komperta Sungai Gerong, Kec. Banyuasin I, Sumatera Selatan 30962, Indonesia.</p>
+                        <span>+62-711 5740701 <br>s.d 574704</span>
+                    </div>
+                    <div class="footer-location-item">
+                        <h3 data-i18n="foot_loc2">Pabrik Ekstraksi</h3>
+                        <p data-i18n="foot_loc2_desc">Jl. Nigata, Kelurahan Anak Petai, Prabumulih, Sumatera Selatan 31121, Indonesia.</p>
+                        <span>0713-323372 / 320789</span>
+                    </div>
+                    <div class="footer-location-item">
+                        <h3 data-i18n="foot_loc3">Kantor Penghubung</h3>
+                        <p data-i18n="foot_loc3_desc">The East Building Lt.11 Unit 07, Jakarta Selatan 12950, Indonesia.</p>
+                        <span>+62 21 57958218 / 57958218</span>
+                    </div>
+                </div>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.376111045782!2d104.84833797497058!3d-2.9929403969831014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7800c9575407%3A0x4f1b0fc88dbd2566!2sPT.%20Perta-Samtan%20Gas!5e0!3m2!1sid!2sid!4v1779499785329!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="foot_copy">© 2026 PT Perta-Samtan Gas. Hak Cipta Dilindungi Undang-Undang.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" data-i18n="foot_priv">Privasi</a>
+                    <a href="#" data-i18n="foot_site">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/lang.js"></script> 
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/responsive.js"></script>
+
+</body>
+</html>

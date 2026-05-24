@@ -1,0 +1,737 @@
+/* Kunci layar agar tidak bisa di-scroll horizontal */
+html, body {
+    overflow-x: clip; /* Ganti 'hidden' jadi 'clip' agar browser tidak bingung */
+    width: 100%;
+    position: relative;
+}
+
+/* SEMBUNYIKAN HAMBURGER MENU DI DESKTOP */
+.menu-toggle {
+    display: none; 
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+/* ========================= */
+/* TABLET (Diubah ke 1024px biar iPad Pro masuk) */
+/* ========================= */
+
+@media(max-width: 1024px){
+
+    /* ========================= */
+    /* PERBAIKAN ABOUT STATS (TABLET/IPAD) */
+    /* ========================= */
+    .about-stats {
+        display: flex !important;
+        flex-direction: column !important; /* Menyusun kotak turun ke bawah */
+        align-items: flex-start !important; /* INI KUNCINYA: Bikin lebar kotak pas seukuran konten teksnya aja */
+        gap: 16px !important; 
+    }
+
+    /* ========================= */
+    /* PERBAIKAN VISI MISI & NILAI (TABLET/IPAD) */
+    /* ========================= */
+    
+/* 1. Susun Visi Misi Atas-Bawah & Atur Lebarnya */
+    .vision-mission {
+        display: flex !important;
+        flex-direction: column !important; 
+        gap: 20px !important;
+        align-items: flex-start !important; /* KUNCI 1: Hentikan sifat melar otomatisnya */
+    }
+
+    /* KUNCI 2: Atur lebar kotak jadi setengah halaman */
+    .vision-card, .mission-card {
+        width: 50% !important; /* Bisa diganti jadi 60% kalau teksnya dirasa terlalu sempit */
+    }
+
+    /* Taruh Visi di bawah dan ubah background jadi abu-abu */
+    .vision-card {
+        order: 2 !important; 
+        background: #475569 !important; 
+    }
+
+    .mission-card {
+        order: 1 !important; 
+    }
+
+    /* 2. Bikin Nilai Jadi 2 Kolom (2x3) */
+    .value-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Membagi jadi 2 kolom sama besar */
+        gap: 18px !important;
+        width: 60%;
+    }
+
+    /* ... KODE LAINNYA BIARKAN SAJA ... */
+
+    /* Pastikan kode perbaikan Process ini ada di dalam sini ya mas */
+    .process-content {
+        padding: 0 40px !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box; 
+    }
+
+    .process-row.reverse .process-content {
+        margin-left: 0 !important; 
+        transform: translateX(0) !important; 
+    }
+    
+    .process-row.reverse {
+        overflow: hidden; 
+    }
+
+    /* ========================= */
+    /* PERBAIKAN FASILITAS UTAMA (TABLET/IPAD) */
+    /* ========================= */
+    
+    .facilities-header {
+        margin-left: 0 !important; /* Tarik kembali teks ke dalam layar */
+        padding: 0 40px !important; /* Sesuaikan jarak kiri dengan container iPad */
+    }
+
+    .facilities-track {
+        padding: 0 40px !important; /* Biar sejajar rapi dengan teks judulnya */
+    }
+
+    /* ========================= */
+    /* MENGAKTIFKAN SWIPE JARI DI SEMUA SLIDER (TABLET/IPAD) */
+    /* ========================= */
+    
+    .facilities-slider,
+    .ecosystem-slider,
+    .csr-showcase {
+        overflow-x: auto !important; /* Izinkan scroll horizontal */
+        overflow-y: hidden !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Bikin swipe iPad licin mulus */
+        scrollbar-width: none; /* Sembunyikan scrollbar Firefox */
+    }
+
+    /* Sembunyikan garis scrollbar di Safari/Chrome iPad */
+    .facilities-slider::-webkit-scrollbar,
+    .ecosystem-slider::-webkit-scrollbar,
+    .csr-showcase::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    /* ========================= */
+    /* PERBAIKAN SECTION KEUNGGULAN (TABLET/IPAD) */
+    /* ========================= */
+    
+    .advantages {
+        height: auto !important; /* Lepas paksaan tinggi layar penuh (100vh) */
+    }
+
+    .advantages-content {
+        height: auto !important;
+        padding: 100px 40px !important; /* Atur jarak ruang atas dan bawahnya */
+        justify-content: center !important; /* Tarik elemen ke tengah (batalin efek space-between) */
+        gap: 60px !important; /* Beri jarak manual yang pas antara judul dan menu kotak-kotak */
+    }
+
+    /* ========================= */
+    /* PERBAIKAN SECTION JOURNEY (TABLET/IPAD) */
+    /* ========================= */
+    
+    .journey {
+        height: auto !important; /* Lepas paksaan tinggi 100vh */
+    }
+
+    .journey-content {
+        height: auto !important;
+        padding: 100px 40px !important; 
+        justify-content: center !important; /* Tarik semua elemen ke tengah */
+        gap: 50px !important; /* Beri jarak manual yang rapi antar elemen */
+    }
+
+    /* ========================= */
+    /* PERBAIKAN TOMBOL KATEGORI CSR (TABLET/IPAD) */
+    /* ========================= */
+    
+    .csr-category-buttons {
+        grid-template-columns: repeat(2, 1fr) !important; /* Ubah dari 4 kolom menjadi 2 kolom */
+        gap: 16px !important; /* Beri jarak yang pas antar tombol */
+    }
+    
+    /* Sedikit penyesuaian padding tombol agar teksnya tidak terpotong */
+    .csr-category-btn {
+        padding: 16px 20px !important;
+        font-size: 14px !important; 
+    }
+    
+    /* ========================= */
+    /* MENGAKTIFKAN SWIPE JARI EKOSISTEM & CSR (MOBILE) */
+    /* ========================= */
+    
+    .ecosystem-slider,
+    .csr-showcase { /* <-- Tambahkan ini mas */
+        overflow-x: auto !important; 
+        overflow-y: hidden !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch !important; 
+        touch-action: pan-x !important; 
+        scrollbar-width: none !important;
+    }
+
+    .ecosystem-slider::-webkit-scrollbar,
+    .csr-showcase::-webkit-scrollbar { /* <-- Tambahkan ini juga */
+        display: none !important;
+    }
+
+}
+
+@media(max-width: 992px){
+
+    /* ========================= */
+    /* CONTAINER */
+    /* ========================= */
+
+    .container{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    /* ========================= */
+    /* NAVBAR */
+    /* ========================= */
+
+    .navbar{
+        padding: 20px 0;
+    }
+
+    .navbar-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* NAV LINKS */
+
+    .nav-links{
+        gap: 24px;
+    }
+
+    .nav-links a{
+        font-size: 15px;
+    }
+    
+
+    /* LOGO */
+
+    .logo img{
+        width: 160px;
+    }
+
+    /* ========================= */
+    /* HERO */
+    /* ========================= */
+
+    .hero{
+        min-height: 100vh;
+        padding: 180px 0 120px;
+    }
+
+    .hero-content{
+        max-width: 100%;
+    }
+
+    .hero-title{
+        font-size: 68px;
+        line-height: 1.05;
+    }
+
+    .hero-quote{
+        font-size: 22px;
+        max-width: 650px;
+    }
+
+    .about-content {
+        padding: 0 40px;
+        margin-top: 80px;
+    }
+    .value-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Perbaikan section Output (Biar jadi akordion vertikal) */
+    .output-wrapper {
+        flex-direction: column;
+    }
+    .output-item {
+        border-left: none;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+        width: 100%;
+    }
+    .output-content {
+        padding: 30px 40px;
+        transform: translateY(20px);
+    }
+    
+    /* Perbaikan tombol CSR */
+    .csr-category-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ========================= */
+    /* PERBAIKAN PROCESS SECTION (MOBILE & TABLET) */
+    /* ========================= */
+    
+    .process-content {
+        padding: 0 20px !important; /* Timpa padding 50px dari desktop */
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box; /* Pastikan padding tidak menambah lebar layar */
+    }
+
+    .process-row.reverse .process-content {
+        margin-left: 0 !important; /* Hapus margin desktop yang menarik teks */
+        transform: translateX(0) !important; /* Paksa teks diam di tempat */
+    }
+    
+    .process-row.reverse {
+        overflow: hidden; /* Cegah kebocoran elemen ke samping */
+    }
+
+    /* ========================= */
+    /* PERBAIKAN OUTPUT SECTION (TABLET) */
+    /* ========================= */
+    .output {
+        height: auto !important; /* Lepas paksaan 100vh agar gak nabrak */
+        padding: 100px 0 !important;
+    }
+
+    .output-header {
+        position: relative !important; /* Lepas dari pojok kiri atas */
+        top: 0 !important;
+        left: 0 !important;
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 0 40px;
+    }
+
+    .output-title {
+        font-size: 48px !important;
+        margin-top: 10px;
+    }
+
+    .output-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Bikin 2 Kolom! */
+        gap: 20px;
+        padding: 0 40px;
+        height: auto !important;
+        border: none !important; /* Hilangkan garis pembatas desktop */
+    }
+
+    .output-item {
+        height: 280px !important; /* Tinggi kotak kita fix-kan */
+        border: none !important;
+        border-radius: 20px; /* Biar ujungnya melengkung manis */
+        overflow: hidden;
+    }
+
+    /* Matikan efek melar dari desktop */
+    .output-item.active {
+        flex: unset !important;
+    }
+
+    /* Paksa konten teks selalu muncul */
+    .output-content {
+        opacity: 1 !important; 
+        transform: translateY(0) !important;
+        padding: 24px !important;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Taruh teks ngumpul di bawah */
+        background: linear-gradient(to top, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.1) 100%) !important; /* Gelapkan bawahnya biar teks putihnya kontras */
+    }
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width: 768px){
+
+    /* CONTAINER */
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* NAVBAR */
+    .navbar{
+        padding: 18px 0;
+    }
+    .navbar-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo img{
+        width: 115px;
+    }
+   .navbar-wrapper-mobile {
+        display: flex !important;
+        align-items: center;
+        gap: 20px; /* Jarak antara teks bahasa dan icon hamburger */
+    }
+
+    /* Pastikan tombol bahasa muncul */
+    .navbar-language {
+        display: flex !important;
+        color: white; /* Sesuaikan warna font-nya */
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    /* ========================= */
+    /* PERBAIKAN MENU & HAMBURGER */
+    /* ========================= */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 9999;
+        margin-left: 0;
+    }
+    .menu-toggle span{
+        width: 28px;
+        height: 3px;
+        background: white;
+        border-radius: 999px;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        flex-direction: column;
+        justify-content: center; 
+        background: #062B63; 
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        transition: right 0.4s ease-in-out; 
+        z-index: 9998; 
+    }
+    .nav-links.active {
+        right: 0; 
+    }
+    .nav-links li {
+        margin: 20px 0; 
+    }
+    .nav-links a {
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+    }
+
+    /* ========================= */
+    /* PERBAIKAN LAYOUT ABOUT */
+    /* ========================= */
+    .about-content {
+        padding: 0 20px !important;
+        margin-top: 60px !important;
+    }
+    
+    .about-tabs {
+        display: flex !important;
+        flex-wrap: wrap !important; 
+        gap: 15px !important; 
+        margin-top: 80px !important;
+    }
+    
+    .about-stats,
+    .value-grid,
+    .csr-category-buttons {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 0px !important; /* Paksa beri jarak 24px */
+    }
+
+       .vision-mission{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 0px !important; /* Paksa beri jarak 24px */
+        align-items: stretch !important;
+       }
+
+    .stat-card, 
+    .value-card, 
+    .purpose-item {
+        margin-bottom: 20px !important; 
+    }
+
+    .vision-card, 
+    .mission-card{
+        margin-bottom: 20px !important; 
+        width: 100% !important;
+    }
+
+/* ========================= */
+    /* PERBAIKAN KARTU NILAI (MOBILE) */
+    /* ========================= */
+    
+    .value-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* Pastikan jadi 1 kolom ke bawah */
+        width: 100% !important;
+    }
+
+    .value-card {
+        width: 100% !important; /* Paksa kartu melar 100% memenuhi layar */
+        box-sizing: border-box !important;
+    }
+    /* ========================= */
+    /* OUTPUT */
+    /* ========================= */
+    .output-content h3 {
+        font-size: 28px;
+    }
+    .output-content h4 {
+        font-size: 22px;
+    }
+
+    /* ========================= */
+    /* HERO */
+    /* ========================= */
+    .hero{
+        min-height: 100vh;
+        padding: 140px 0 100px;
+    }
+    .hero-content{
+        padding-top: 20px;
+    }
+    .hero-title{
+        font-size: 42px;
+        line-height: 1.1;
+        max-width: 280px;
+    }
+    .hero-quote{
+        font-size: 16px;
+        line-height: 1.8;
+        max-width: 280px;
+    }
+    .hero-subtitle{
+        font-size: 12px;
+        letter-spacing: 6px;
+    }
+    .scroll-indicator{
+        display: none;
+    } 
+
+    /* ========================= */
+    /* PERBAIKAN OUTPUT SECTION (MOBILE) */
+    /* ========================= */
+    .output {
+        padding: 80px 0 !important;
+    }
+
+    .output-header {
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .output-title {
+        font-size: 36px !important;
+    }
+
+    .output-wrapper {
+        grid-template-columns: 1fr !important; /* Jadi 1 kolom bersusun ke bawah */
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .output-item {
+        height: 220px !important;
+    }
+
+    /* Sesuaikan ukuran font biar gak kebesaran di HP */
+    .output-content h3 {
+        font-size: 20px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .output-content h4 {
+        font-size: 24px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .output-content p {
+        font-size: 15px !important;
+    }
+
+    /* ========================= */
+    /* PERBAIKAN FASILITAS UTAMA (MOBILE) */
+    /* ========================= */
+    
+    .facilities-header {
+        margin-left: 0 !important; /* Menarik teks kembali ke dalam layar */
+        padding: 0 20px !important; /* Menyamakan jarak dengan pinggir layar */
+        margin-bottom: 30px !important;
+    }
+
+    .facilities-track {
+        padding: 0 20px !important;
+        gap: 20px !important; /* Jarak antar kartu sedikit dirapatkan */
+    }
+
+    .facility-card {
+        width: 280px !important; /* Ukuran yang sangat pas dan aman untuk iPhone 12 */
+    }
+
+    .facility-content {
+        padding: 24px !important;
+    }
+
+    .facility-content h3 {
+        font-size: 22px !important; /* Biar judulnya gak terlalu kebesaran di kartu */
+    }
+
+    .facilities-slider {
+        overflow-x: auto !important; /* Izinkan scroll horizontal bawaan layar sentuh */
+        overflow-y: hidden !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Bikin swipe-nya super mulus / licin khas HP (terutama iPhone/iOS) */
+        scrollbar-width: none; /* Sembunyikan garis scrollbar di Firefox */
+    }
+
+    /* Sembunyikan garis scrollbar jelek di Chrome/Safari/Brave */
+    .facilities-slider::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .facilities-track {
+        width: max-content !important;
+        padding-bottom: 20px !important; /* Kasih ruang sedikit di bawah biar bayangan (shadow) kartu gak kepotong */
+    }
+
+    /* ========================= */
+    /* PERBAIKAN CSR BUTTONS & JARAK ANTAR SECTION (MOBILE) */
+    /* ========================= */
+    
+    /* 1. Perbaiki tombol kategori CSR (Beri jarak dan susun vertikal) */
+    .csr-category-buttons {
+        grid-template-columns: 1fr !important; /* Paksa 1 kolom ke bawah */
+        gap: 16px !important; /* Ini kunci untuk memberi jarak antar tombolnya */
+    }
+
+    /* 2. Kurangi jarak (padding) bawah di section CSR */
+    .csr {
+        padding: 80px 0 40px !important; /* Atas 80px, Kiri-Kanan 0, Bawah dikurangi jadi 40px */
+    }
+
+    /* 3. Kurangi jarak (padding) atas di section Safety (HSSE) */
+    .safety {
+        padding: 30px 0 70px !important; /* Atas dikurangi jadi 30px, Kiri-Kanan 0, Bawah 70px */
+    }
+
+    /* ========================= */
+    /* PERBAIKAN BADGE HSSE (MOBILE) */
+    /* ========================= */
+    
+    .safety-header {
+        flex-direction: row !important; /* Ubah kembali jadi baris */
+        flex-wrap: wrap !important; /* Izinkan elemen turun ke bawah jika ruangnya sempit */
+        gap: 10px !important; /* Jarak antar badge */
+    }
+
+    /* Paksa bungkus teks judul (Peringatan Keselamatan) untuk ambil 1 baris penuh sendiri di atas */
+    .safety-header > div:first-child {
+        width: 100% !important; 
+        margin-bottom: 12px !important;
+    }
+
+    /* Bikin badgenya sejajar membagi rata 3 kolom */
+    .safety-badge {
+        flex: 1; /* Kunci membagi ruang jadi 3 sama besar */
+        display: flex;
+        justify-content: center; /* Posisikan teks di tengah */
+        padding: 10px 4px !important; /* Kurangi padding kiri-kanan agar muat 3 sejajar di layar HP */
+        font-size: 12px !important; /* Sesuaikan ukuran font agar kata "Intervensi" tidak terpotong */
+    }
+
+    /* ========================= */
+    /* PERBAIKAN JARAK HSSE KE EKOSISTEM (MOBILE) */
+    /* ========================= */
+    
+    /* 1. Hilangkan margin bawah bawaan desktop dan kurangi paddingnya */
+    .safety {
+        margin-bottom: 0 !important; 
+        padding-bottom: 40px !important; /* Menggantikan padding 70px yang sebelumnya kita buat */
+    }
+
+    /* 2. Kurangi jarak atas section Ekosistem */
+    .ecosystem {
+        padding-top: 40px !important; /* Aslinya 80px, kita potong setengahnya biar lebih rapat */
+    }
+    
+    .shareholder {
+        padding-top: 40px;
+    }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media(max-width: 576px){
+
+    /* CONTAINER */
+
+    .container{
+        padding: 0 18px;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding: 130px 0 90px;
+    }
+
+    .hero-title{
+        font-size: 36px;
+
+        max-width: 240px;
+    }
+
+    .hero-quote{
+        font-size: 15px;
+
+        max-width: 240px;
+    }
+
+    .hero-subtitle{
+        font-size: 11px;
+
+        letter-spacing: 4px;
+    }
+
+    /* LOGO */
+
+    .logo img{
+        width: 100px;
+    }
+
+    /* TOGGLE */
+
+    .menu-toggle span{
+        width: 24px;
+        height: 2.5px;
+    }
+
+}

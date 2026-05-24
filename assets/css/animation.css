@@ -1,0 +1,89 @@
+/* ========================= */
+/* REVEAL ANIMATION */
+/* ========================= */
+
+.reveal{
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition:
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+    transition-delay: 0.25s;
+}
+
+/* ACTIVE */
+
+.reveal.active{
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* ========================= */
+/* PROCESS ANIMATION */
+/* ========================= */
+
+/* IMAGE */
+
+.process-animate .process-image{
+    opacity: 0;
+
+    transform: translateX(-120px);
+
+    transition:
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* CONTENT */
+
+.process-animate .process-content{
+    opacity: 0;
+
+    transform: translateX(120px);
+
+    transition:
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+    transition-delay: 0.15s;
+}
+
+/* ACTIVE */
+
+.process-animate.active .process-image,
+.process-animate.active .process-content{
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+/* ========================= */
+/* REVERSE */
+/* ========================= */
+
+.process-row.reverse.process-animate .process-image{
+    transform: translateX(10px);
+}
+
+.process-row.reverse.process-animate .process-content{
+    transform: translateX(-160px);
+}
+
+/* ========================= */
+/* REVERSE FIX */
+/* ========================= */
+
+.process-row.reverse{
+    overflow: hidden;
+}
+
+/* CONTENT */
+
+.process-row.reverse .process-content{
+    margin-left: auto;
+}
+
