@@ -2424,48 +2424,31 @@ p{
 /* CATEGORY BUTTON */
 /* ========================= */
 
-.csr-category-buttons{
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 18px;
-
-    margin-top: 60px;
+.csr-category-buttons {
+    display: grid !important;
+    /* Ini kuncinya: repeat(2, 1fr) memaksa grid jadi 2 kolom */
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 15px !important; /* Jarak antar tombol biar tidak nempel */
+    margin-top: 40px !important;
+    width: 100%;
 }
 
-/* BUTTON */
-
-.csr-category-btn{
-    position: relative;
-
-    padding: 18px 30px;
-
-    border-radius: 999px;
-
-    border: none;
-
-    background: #EEF2FF;
-
-    color: #334155;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    overflow: hidden;
-
-    transition: 0.3s ease;
-
-    isolation: isolate;
-
-    width: 100%;
-
+.csr-category-btn {
     display: flex;
-
     align-items: center;
     justify-content: center;
+    padding: 14px 10px !important; 
+    border-radius: 999px;
+    border: none;
+    background: #EEF2FF;
+    color: #334155;
+    font-size: 14px !important; 
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; /* Menampilkan ... jika teks tetap tidak muat */
+    width: 100%;
 }
 
 /* ACTIVE */

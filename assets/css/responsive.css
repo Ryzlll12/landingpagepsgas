@@ -102,13 +102,19 @@ html, body {
     /* ========================= */
     
     .facilities-slider,
-    .ecosystem-slider,
     .csr-showcase {
         overflow-x: auto !important; /* Izinkan scroll horizontal */
         overflow-y: hidden !important;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch; /* Bikin swipe iPad licin mulus */
         scrollbar-width: none; /* Sembunyikan scrollbar Firefox */
+    }
+
+    .ecosystem-slider {
+    overflow-x: hidden !important; /* Ubah auto jadi hidden */
+    overflow-y: hidden !important;
+    touch-action: none !important; /* Matikan aksi sentuhan */
+    pointer-events: none !important; /* Biar user gak bisa klik/geser */
     }
 
     /* Sembunyikan garis scrollbar di Safari/Chrome iPad */
